@@ -16,7 +16,7 @@ public class ExitWindow extends JFrame {
         cancelButton.setFocusable(false);
         exitButton.setFocusable(false);
 
-        setIconImage(new ImageIcon("ImageAssets/StickMan.png").getImage());
+        setIconImage(new ImageIcon(getClass().getResource("ImageAssets/StickMan.png")).getImage());
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

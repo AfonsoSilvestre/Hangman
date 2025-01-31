@@ -154,7 +154,7 @@ public class GameWindow implements Words {
      */
     private void downloadImages(){
         for(int i = 0; i < HangmanStages.length; i++){
-            Image stage = new ImageIcon(String.format("ImageAssets/HangManPics/stage%d.jpg", i)).getImage().getScaledInstance( 90, 140, Image.SCALE_SMOOTH);
+            Image stage = new ImageIcon(getClass().getResource(String.format("ImageAssets/HangManPics/stage%d.jpg", i))).getImage().getScaledInstance( 90, 140, Image.SCALE_SMOOTH);
             HangmanStages[i] = stage;
         }
     }

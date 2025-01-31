@@ -14,7 +14,7 @@ import java.awt.*;
 public class Window extends JFrame {
     private CardLayout layout = new CardLayout();
     private JPanel container = new JPanel(layout);
-    ImageIcon hangmanIcon = new ImageIcon("ImageAssets/StickMan.png");
+    ImageIcon hangmanIcon = new ImageIcon(getClass().getResource("ImageAssets/StickMan.png"));
 
     public Window() {
         setTitle("Hangman");

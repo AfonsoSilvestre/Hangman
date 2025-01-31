@@ -61,7 +61,7 @@ public class MainMenu {
      * accross the screen.
      */
     private void loadGameTitle() {
-        ImageIcon hangmanIcon = new ImageIcon("ImageAssets/HangmanGameIcon.png");
+        ImageIcon hangmanIcon = new ImageIcon(getClass().getResource("ImageAssets/HangmanGameIcon.png"));
         gameTitle.setFont(new Font(Font.DIALOG, Font.PLAIN, 50));
         gameTitle.setOpaque(false);
         gameTitle.setIcon(new ImageIcon(hangmanIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH))); // good practice to load images with custom resolutions to scale them properly
@@ -100,7 +100,7 @@ public class MainMenu {
      * Loads this project's author Github link onto the top right of the frame. Mine.
      */
     private void loadGithubMark() {
-        ImageIcon GitHubIcon = new ImageIcon("ImageAssets/GitHubIcon.png");
+        ImageIcon GitHubIcon = new ImageIcon(getClass().getResource("ImageAssets/GitHubIcon.png"));
 
         githubMark.setText("AfonsoSilvestre");
         githubMark.setFont(new Font(Font.DIALOG, Font.PLAIN, 11));
@@ -133,7 +133,7 @@ public class MainMenu {
      * Loads this project's author LinkedIn link onto the top right of the frame. Mine.
      */
     private void loadLinkedInMark() {
-        ImageIcon LinkedInIcon = new ImageIcon("ImageAssets/LinkedInIcon.png");
+        ImageIcon LinkedInIcon = new ImageIcon(getClass().getResource("ImageAssets/LinkedInIcon.png"));
 
         linkedInMark.setText("AfonsoSilvestre");
         linkedInMark.setFont(new Font(Font.DIALOG, Font.PLAIN, 11));
